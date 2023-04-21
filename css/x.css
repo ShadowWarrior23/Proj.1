@@ -19,10 +19,7 @@ img {
 }
 
 nav {
-    position: sticky;
-    left: 0;
-    top: 0;
-    right: 0;
+    background-color: ;
 }
 
 ul {
@@ -37,4 +34,14 @@ li {
 a {
     color: #000;
     text-decoration: none;
+}
+
+li ul li {
+    opacity: 0;
+    height: 0;
+}
+
+li ul li:hover {
+    opacity: 100%;
+    height: 2.5rem;
 }
