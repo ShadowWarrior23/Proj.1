@@ -35,3 +35,9 @@ a {
     color: #000;
     text-decoration: none;
 }
+header{
+    background-image: url(../img/);
+background-repeat: no-repeat;
+background-size: cover;
+height: 20rem;
+}
