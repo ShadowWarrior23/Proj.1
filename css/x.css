@@ -18,26 +18,9 @@ img {
     max-width: 100%;
 }
 
-nav {
-    background-color: ;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-header{
+header {
     background-image: url(../img/);
-background-repeat: no-repeat;
-background-size: cover;
-height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
 }
