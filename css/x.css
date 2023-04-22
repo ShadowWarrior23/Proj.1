@@ -26,6 +26,9 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: darkred;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav>ul {
@@ -41,7 +44,7 @@ nav>ul {
 nav ul i {
     background-color: darkred;
     border-radius: 50%;
-    padding: .1rem .3rem;
+    padding: .1rem 1rem;
     color: #fff;
 }
 
@@ -64,7 +67,7 @@ nav ul a:hover {
 nav ul ul {
     position: absolute;
     list-style-type: none;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav ul ul li a {
@@ -103,7 +106,7 @@ main {
 
 .card {
     margin: 1rem;
-    display: inline-block
+    display: flex;
 }
 
 .container-fluid {
@@ -111,14 +114,26 @@ main {
     flex-wrap: wrap;
 }
 
-input{
+input {
     margin: .75rem;
+}
+
+button {
+    padding: .5rem;
+    border: solid black 3px;
+    font-weight: bold;
+    letter-spacing: 1.5;
+}
+
+button a {
+    text-decoration: none;
+    color: #000;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: khaki;
+    background-color: darkred;
 }
 
 footer p {
@@ -127,11 +142,14 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
     transition: .5s;
+    font-weight: bolder;
+    letter-spacing: 1.5;
+    font-size: 1.5rem;
 }
 
 footer a:hover {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     transition: .5s;
 }
