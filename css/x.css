@@ -34,7 +34,7 @@ nav>ul {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    gap: 400px;
+    gap: 350px;
     margin: 0;
 }
 
@@ -103,16 +103,16 @@ main {
 
 .card {
     margin: 1rem;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: inline-block
 }
 
 .container-fluid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+input{
+    margin: .75rem;
 }
 
 footer {
