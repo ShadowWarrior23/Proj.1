@@ -102,11 +102,17 @@ main {
 }
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     margin: 1rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer {
