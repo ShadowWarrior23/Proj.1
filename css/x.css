@@ -13,22 +13,13 @@ body {
     background-size: cover;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 nav {
     position: sticky !important;
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
-}
-
-header {
-    background-image: url(../img/);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10rem;
 }
 
 main {
