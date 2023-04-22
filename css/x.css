@@ -11,11 +11,17 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
 }
 
 img {
     max-width: 100%;
+}
+
+nav {
+    position: sticky !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
 }
 
 header {
@@ -23,4 +29,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 20rem;
+}
+
+main{
+    max-width: 90%;
+    background-color: rgba(10, 10, 10, .6);
+    margin: 0 auto;
 }
