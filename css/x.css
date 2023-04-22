@@ -20,61 +20,71 @@ header {
     margin: 0 auto;
 }
 
-nav{
+nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
     background-color: darkred;
 }
-nav>ul{
+
+nav>ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    list-style-type:none;
+    list-style-type: none;
+    gap: 400px;
     margin: 0;
 }
-nav ul i{
+
+nav ul i {
     background-color: darkred;
     border-radius: 50%;
     padding: .1rem .3rem;
-    color:#fff;
+    color: #fff;
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
 }
-nav ul a{
+
+nav ul a {
     text-decoration: none;
     display: inline-block;
-    color:#fff;
+    color: #fff;
     padding: .7rem;
     font-size: 1.1rem;
 }
-nav ul a:hover{
+
+nav ul a:hover {
     background-color: rgb(88, 0, 0);
 }
-/*Almenü*/
-nav ul ul{
+
+nav ul ul {
     position: absolute;
     list-style-type: none;
     z-index: 2;
 }
-nav ul ul li a{
+
+nav ul ul li a {
     display: none;
-    background-color: rgba(0, 100, 148, 1);
+    background-color: darkred;
 }
 
-nav ul ul li{
+nav ul ul li {
     height: 0;
     opacity: 0;
     transition: height 0.3s, opacity 0.2s;
     transform: translateX(-2rem);
 }
-nav ul li:hover ul li{
+
+nav ul li:hover ul li {
     height: 3rem;
     opacity: 1;
 }
-nav ul li:hover ul li a{
+
+nav ul li:hover ul li a {
     display: inline-block;
     width: 20rem;
 }
@@ -85,6 +95,10 @@ main {
     margin: .5rem auto;
     padding: .5rem;
     border: 2px rgb(64, 0, 0) solid;
+}
+
+.card-text {
+    font-size: 1.5rem;
 }
 
 footer {
