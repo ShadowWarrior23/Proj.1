@@ -37,7 +37,7 @@ nav>ul {
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    gap: 300px;
+    gap: 200px;
     margin: 0;
 }
 
@@ -152,4 +152,15 @@ footer a {
 footer a:hover {
     font-size: 1.6rem;
     transition: .5s;
+}
+
+@media (max-width: 800px){
+nav{
+    display: none;
+}}
+@media (max-width: 700px){
+    header{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
