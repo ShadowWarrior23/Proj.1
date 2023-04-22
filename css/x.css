@@ -40,15 +40,23 @@ main {
     box-shadow: 1px 2px 1px darkblue;
 }
 
-footer{
+footer {
     text-align: center;
+    padding: .5rem;
+    background-color: darkred;
 }
-footer a{
+
+footer p {
+    margin: 0;
+}
+
+footer a {
     text-decoration: none;
     color: #000;
     transition: .5s;
 }
-footer a:hover{
+
+footer a:hover {
     font-size: 1.1rem;
     transition: .5s;
 }
