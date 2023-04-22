@@ -7,16 +7,17 @@
 }
 
 body {
-    background-color: #000;
+    background-image: url("../img/desktop-wallpaper-blood-splatter-black-background-blood-spatter-thumbnail.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
-    background-image: url(../img/H2-min_50.png);
+    background-image: url("../img/H2-min_50.png");
     height: 15rem;
     width: 100%;
+    margin: 0 auto;
 }
 
 nav {
@@ -25,11 +26,15 @@ nav {
     right: 0 !important;
     left: 0 !important;
     background-color: darkred;
-    z-index: 3;
+    z-index: 1;
     padding: 1rem;
 }
 
 ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin: 0;
 }
 
@@ -42,18 +47,46 @@ li a {
     color: #000;
 }
 
+nav ul ul {
+    position: absolute;
+    list-style-type: none;
+    z-index: 2;
+}
+
+nav ul ul li a {
+    display: none;
+}
+
+
+nav ul ul li {
+    background-color: darkred;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s, opacity 0.2s;
+    transform: translateX(-2rem);
+}
+
+nav ul li:hover ul li {
+    height: 3rem;
+    opacity: 1;
+}
+
+nav ul li:hover ul li a {
+    display: inline-block;
+    width: 20rem;
+}
+
 main {
     max-width: 90%;
     background-color: rgba(126, 121, 121, 0.5);
-    margin: 0 auto;
+    margin: .5rem auto;
     padding: .5rem;
-    border: 2px black solid;
-    box-shadow: 1px 2px 1px darkblue;
+    border: 2px rgb(64, 0, 0) solid;
 }
 
 footer {
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
     background-color: khaki;
 }
 
