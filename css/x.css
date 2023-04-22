@@ -20,58 +20,61 @@ header {
     margin: 0 auto;
 }
 
-nav {
-    position: sticky !important;
-    top: 0 !important;
-    right: 0 !important;
-    left: 0 !important;
-    background-color: darkred;
-    z-index: 1;
-    padding: 1rem;
-}
-
-ul {
+nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    background-color: darkred;
+}
+nav>ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    list-style-type:none;
     margin: 0;
 }
-
-li {
+nav ul i{
+    background-color: darkred;
+    border-radius: 50%;
+    padding: .1rem .3rem;
+    color:#fff;
+}
+nav ul li{
     list-style-type: none;
 }
-
-li a {
+nav ul a{
     text-decoration: none;
-    color: #000;
+    display: inline-block;
+    color:#fff;
+    padding: .7rem;
+    font-size: 1.1rem;
 }
-
-nav ul ul {
+nav ul a:hover{
+    background-color: rgb(88, 0, 0);
+}
+/*Almenü*/
+nav ul ul{
     position: absolute;
     list-style-type: none;
     z-index: 2;
 }
-
-nav ul ul li a {
+nav ul ul li a{
     display: none;
+    background-color: rgba(0, 100, 148, 1);
 }
 
-
-nav ul ul li {
-    background-color: darkred;
+nav ul ul li{
     height: 0;
     opacity: 0;
     transition: height 0.3s, opacity 0.2s;
     transform: translateX(-2rem);
 }
-
-nav ul li:hover ul li {
+nav ul li:hover ul li{
     height: 3rem;
     opacity: 1;
 }
-
-nav ul li:hover ul li a {
+nav ul li:hover ul li a{
     display: inline-block;
     width: 20rem;
 }
