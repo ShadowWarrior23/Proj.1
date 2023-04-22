@@ -7,10 +7,16 @@
 }
 
 body {
-    background-image: url(../img/);
+    background-color: #000;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header {
+    background-image: url(../img/H2-min_50.png);
+    height: 15rem;
+    width: 100%;
 }
 
 nav {
@@ -18,11 +24,27 @@ nav {
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
+    background-color: darkred;
+    z-index: 3;
+    padding: 1rem;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
 }
 
 main {
     max-width: 90%;
-    background-color: rgba(10, 10, 10, .3);
+    background-color: rgba(126, 121, 121, 0.5);
     margin: 0 auto;
     padding: .5rem;
     border: 2px black solid;
@@ -32,7 +54,7 @@ main {
 footer {
     text-align: center;
     padding: .5rem;
-    background-color: darkred;
+    background-color: khaki;
 }
 
 footer p {
@@ -46,6 +68,6 @@ footer a {
 }
 
 footer a:hover {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     transition: .5s;
 }
