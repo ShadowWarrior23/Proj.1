@@ -99,14 +99,18 @@ main {
     padding: .5rem;
     border: 2px rgb(64, 0, 0) solid;
 }
-
-.card-text {
-    font-size: 1.5rem;
+.row{
+    justify-content: space-evenly;
 }
-
 .card {
     margin: 1rem;
     display: flex;
+}
+.card :hover{
+    max-width: ;
+}
+.card-text {
+    font-size: 1.5rem;
 }
 
 .container-fluid {

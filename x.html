@@ -15,22 +15,22 @@
     <header></header>
     <nav>
         <ul>
-            <li><a href="#story">Story</a></li>
-            <li><a href="">Story Game</a>
+            <li><a href="#row0">Story</a></li>
+            <li><a href="#row1">Story Game</a>
                 <ul>
                     <li><a href="#I">AC 1</a></li>
                     <li><a href="#II">AC 2</a></li>
                     <li><a href="#III">AC 3</a></li>
                 </ul>
             </li>
-            <li><a href="">Részben RPG</a>
+            <li><a href="#row2">Részben RPG</a>
                 <ul>
                     <li><a href="#IV">AC 4</a></li>
                     <li><a href="#ACU">AC Unity</a></li>
                     <li><a href="#ACS">AC Syndicate</a></li>
                 </ul>
             </li>
-            <li><a href="">RPG</a>
+            <li><a href="#row3">RPG</a>
                 <ul>
                     <li><a href="#ACOr">AC Origins</a></li>
                     <li><a href="#ACO">AC Odyssey</a></li>
@@ -43,14 +43,14 @@
     </nav>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row" id="row0" autofocus>
                 <div class="col col-12">
                     <div class="card" id="story"> <!--Story-->
                         <div class="card-body">
                             <h3 class="card-title">Story
                             </h3>
                             <p class="card-text">Az Assassin's Creed videojáték-sorozat egy kitalált, évezredes harcot
-                                mutat be az Assassins Rendje között, akik a békéért és a szabad akaratért harcolnak,
+                                bemutató játék. A fő ellentét az Assassins Rendje között, akik a békéért és a szabad akaratért harcolnak,
                                 valamint a Templomos Lovagok között, akik a rend és az irányítás révén békére vágynak.
                                 A sorozat történelmi fikciókat, sci-fit és kitalált karaktereket tartalmaz valós
                                 történelmi eseményekkel és történelmi személyiségekkel összefonva.
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="row1">
                 <div class="col col-lg-4 col-md-6 col-12 col-sm-12">
                     <div class="card" id="I"><!--AC 1-->
                         <img src="./img/AC 1.jpg" class="card-img-top" alt="Altaïr" title="Altaïr">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="row2">
                 <div class="col col-lg-4 col-md-6 col-12 col-sm-12">
                     <div class="card" id="IV"><!--AC 4-->
                         <img src="./img/AC 4.jpg" class="card-img-top" alt="Edward" title="Edward">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="row3">
                 <div class="col col-lg-4 col-md-6 col-12 col-sm-12">
                     <div class="card" id="ACOr"> <!--AC Origins-->
                         <img src="./img/AC Origins.jpg" class="card-img-top" alt="Bayek" title="Bayek">
@@ -226,11 +226,11 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="color:#fff; background-color: rgba(0, 0, 0, .7); margin-bottom: -10px; padding: 1rem;">
+        <div class="row t" style="color:#fff; background-color: rgba(0, 0, 0, .7); margin-bottom: -10px; padding: 1rem;">
             <div class="col-md-6 col-sm-12 control " id="k">
                 <h2>Könyvrendelés</h2>
                 <label for="fn">Keresztnév: </label><br>
-                <input type="text" name="fn" id="fn" placeholder="Keresztnév" autofocus><br>
+                <input type="text" name="fn" id="fn" placeholder="Keresztnév"><br>
                 <label for="ln">Vezetéknév: </label><br>
                 <input type="text" name="ln" id="ln" placeholder="Vezetéknév"><br>
                 <label for="email">E-mail cím: </label><br>
