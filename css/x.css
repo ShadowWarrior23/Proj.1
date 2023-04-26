@@ -99,16 +99,21 @@ main {
     padding: .5rem;
     border: 2px rgb(64, 0, 0) solid;
 }
-.row{
-    justify-content: space-evenly;
-}
+
 .card {
     margin: 1rem;
     display: flex;
 }
-.card :hover{
-    max-width: ;
+
+.card-img-top:hover {
+    transition: 0.3s;
 }
+
+.card-img-top:hover {
+    margin-top: -5px;
+    transition: 0.3s;
+}
+
 .card-text {
     font-size: 1.5rem;
 }
@@ -158,12 +163,14 @@ footer a:hover {
     transition: .5s;
 }
 
-@media (max-width: 800px){
-nav{
-    display: none;
-}}
-@media (max-width: 700px){
-    header{
+@media (max-width: 800px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
         background-repeat: no-repeat;
         background-size: cover;
     }
