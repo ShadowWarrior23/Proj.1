@@ -175,3 +175,8 @@ footer a:hover {
         background-size: cover;
     }
 }
+@media (max-width: 1320px){
+    nav>ul{
+        gap: 50px;
+    }
+}
